@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Starjedi";
+    src: url("Starjedi.ttf")
+   }
+
+header {
+    background-color: #000;
+    color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+header h1{
+    padding: 5px;
+    font-family: "Starjedi";
+
+}
+
+header input{
+    width: 350px;
+    height: 35px;
+    font-size: 25px;
+}
