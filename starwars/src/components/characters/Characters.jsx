@@ -29,36 +29,15 @@ function Characters() {
        }
      })
   },[page])
-  console.log("next "+nextP);
-  console.log("prev "+prevP)
-  // console.log(nextP)
 
-  // const nextPage = async (event) => {
-  //   event.preventDefault();
-  //   setPage(page + 1)
-  //   fetch(`https://swapi.dev/api/people/?page=${page}`)
-  //   .then( res => { return res.json()})
-  //   .then( async (resultat) => {setData(resultat.results)
-  //     if(resultat.next == null) {
-  //       setNext(false)
-  //     }else{
-  //       setNext(true)
-  //     }
-  //     if(resultat.previous != null){
-  //       setPreview(true)
-  //     } else{
-  //       setPreview(false)
-  //     }
-  //     console.log(resultat.next)
-  //   },[])
-  // }
-
-  const nextPage = () => {
+  const nextPage = (event) => {
+    event.preventDefault()
     let pages = page + 1
     setPage(pages)
   }
 
-  const prevPage = () => {
+  const prevPage = (event) => {
+    event.preventDefault()
     let pages = page - 1
     setPage(pages)
 }
@@ -67,13 +46,18 @@ function Characters() {
     <h1>Characters</h1>
     <div className='characters'>
      {data?.map((user , key) => (
-        <Card key={key} name={user.name}/>
+        <Card key={key} name={user.name} mass={user.mass} height={user.height} gender={user.gender} eye={user.eye_color} hair={user.hair_color} birth={user.birth_year} />
       ))}
     </div>
     <div style={{display:"flex",justifyContent:"space-around"}}>
-      
-      <button onClick={prevPage}>prev</button>
-      <button onClick={nextPage}>next</button>
+      {prevP
+        ? <a href='prev' className='btn' onClick={prevPage}>prev</a>
+        : <div></div>
+      }
+      {nextP
+        ? <a  href='next' className='btn' onClick={nextPage}><p>next</p></a>
+        : <div></div>
+      }
     </div>
   </div>;
 }
