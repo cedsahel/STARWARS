@@ -30,6 +30,7 @@ function Characters() {
      })
   },[page])
 
+
   const nextPage = (event) => {
     event.preventDefault()
     let pages = page + 1
@@ -46,7 +47,7 @@ function Characters() {
     <h1>Characters</h1>
     <div className='characters'>
      {data?.map((user , key) => (
-        <Card key={key} name={user.name} mass={user.mass} height={user.height} gender={user.gender} eye={user.eye_color} hair={user.hair_color} birth={user.birth_year} />
+        <Card key={key} id={user.url.slice(29,-1)} name={user.name} mass={user.mass} height={user.height} gender={user.gender} eye={user.eye_color} hair={user.hair_color} birth={user.birth_year} />
       ))}
     </div>
     <div style={{display:"flex",justifyContent:"space-around"}}>

@@ -1,6 +1,7 @@
 import React from 'react';
 import "./card.css"
 function Card(props) {
+  let url = "/characters/"+props.id
   return <div className='card'>
       <h3>{props.name}</h3>
       <ul>
@@ -11,8 +12,8 @@ function Card(props) {
         <li>birth : {props.birth}</li>
         <li>Gender : {props.gender}</li>
       </ul>
-      <a  href='#' className='btn'><p>plus d'info...</p></a>
-  </div>;
+      <a  href={url} className='btn'><p>plus d'info...</p></a>
+  </div>
 }
 
 export default Card;
