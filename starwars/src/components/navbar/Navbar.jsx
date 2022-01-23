@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./navbar.css";
 
 function Navbar() {
@@ -8,8 +9,13 @@ function Navbar() {
         <h1>Starwars Api</h1>
         <input type="text" />
     </header>
-    <div>
-    </div>
+    <nav style={{display:"flex", justifyContent:"space-around"}}>
+        <Link to="/characters">Personnages</Link>
+        <Link to="/films">films</Link>
+        <Link to="/starships">starship</Link>
+        <Link to="/vehicles">vehicules</Link>
+        <Link to="/species">species</Link>
+    </nav>
   </> 
 }
 
