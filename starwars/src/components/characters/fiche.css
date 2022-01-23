@@ -1,3 +1,30 @@
 h1{
     text-align: center;
 }
+
+.perso{
+    background-color: #000;
+    color: yellow;
+    font-family: "Starjedi";
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.photo{
+    width: 450px;
+    height: 450px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.head{
+    display: flex;
+    justify-content: start;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

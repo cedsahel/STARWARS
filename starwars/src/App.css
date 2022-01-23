@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Starjedi";
+    src: url("../public/Starjedi.ttf")
+   }
+
+   .App{
+       background-color: #000;
+   }
