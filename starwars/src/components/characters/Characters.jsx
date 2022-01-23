@@ -30,7 +30,6 @@ function Characters() {
      })
   },[page])
 
-
   const nextPage = (event) => {
     event.preventDefault()
     let pages = page + 1

@@ -1,0 +1,11 @@
+.btnf{
+    background-color: yellow;
+    /* width: 150px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    height: 40px;
+}
