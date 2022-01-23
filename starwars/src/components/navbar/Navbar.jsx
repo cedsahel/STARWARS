@@ -10,11 +10,11 @@ function Navbar() {
         <input type="text" />
     </header>
     <nav style={{display:"flex", justifyContent:"space-around"}}>
-        <Link to="/characters">Personnages</Link>
-        <Link to="/films">films</Link>
-        <Link to="/starships">starship</Link>
+        <Link to="/characters">personnages</Link>
+        <Link to="/films">film</Link>
+        <Link to="/starships">vaisseaux</Link>
         <Link to="/vehicles">vehicules</Link>
-        <Link to="/species">species</Link>
+        <Link to="/species">especes</Link>
         <Link to="/planets">planetes</Link>
     </nav>
   </> 

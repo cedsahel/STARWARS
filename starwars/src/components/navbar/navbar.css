@@ -24,3 +24,28 @@ header input{
     height: 35px;
     font-size: 25px;
 }
+
+nav{
+    background-color: #000;
+    font-family: "Starjedi";
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: yellow;
+    font-family: "Starjedi";
+    border-radius: 5px;
+    padding: 5px;
+}
+
+nav a:hover{
+    text-decoration: none;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: "Starjedi";
+    background-color: yellow;
+    padding: 5px;
+}
