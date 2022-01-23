@@ -15,6 +15,7 @@ function Navbar() {
         <Link to="/starships">starship</Link>
         <Link to="/vehicles">vehicules</Link>
         <Link to="/species">species</Link>
+        <Link to="/planets">planetes</Link>
     </nav>
   </> 
 }
