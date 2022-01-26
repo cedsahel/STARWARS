@@ -79,20 +79,20 @@ export default function Character() {
 		</div>
 		<div>
 			<h3>vehicules</h3>
-			{data?.vehicles.map((vehicle, key) => (
-				<p key={key}><a>{vehicle}</a></p>
+			{vehicles.map((vehicle, key) => (
+				<p key={key}><a>{vehicle.name}</a></p>
 			))}
 		</div>
 		<div>
 			<h3>vaisseaux </h3>
-			{data?.starships.map((starship, key) => (
-				<p key={key}><a>{starship}</a></p>
+			{starships.map((starship, key) => (
+				<p key={key}><a>{starship.name}</a></p>
 			))}
 		</div>
 		<div>
 			<h3>films</h3>
-			{data?.films.map((film, key) => (
-				<p key={key}><a href='/films/1'>{film}</a></p>
+			{films.map((film, key) => (
+				<p key={key}><a href='/films/1'>{film.title}</a></p>
 			))}
 		</div>
 	</div>;
